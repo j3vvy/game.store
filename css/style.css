@@ -1,0 +1,48 @@
+section {width: 1000px; 
+	margin: 0 auto;}
+header {position: relative;
+	margin: 0 0 50px 0;}
+center {width: 100%; 
+	background: #fff;
+	}
+footer {width: 100%;
+	height: 500px;
+	background: #bbb;
+	margin: 50px 0 0 0;}
+main {margin:0 0 0 10px;}
+details summary::after {
+content: "Открыть";
+}
+details[open] summary::after {
+content: "Закрыть";
+}
+
+details summary {
+  display: block;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary::before {
+  content: "+ ";
+}
+details[open] summary::before {
+  content: "- ";
+}
+
+
+.filter details + details {
+  margin-top: 1em;
+}
+.filter summary {
+  font-weight: 700;  /* жирный шрифт метки */
+  cursor: pointer;  /* курсор на метке имеет вид руки */
+}
+.filter ul {
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+}
+.filter summary:hover {
+  color:#ff3200;  /* изменение цвета метки при наведении */
+}
